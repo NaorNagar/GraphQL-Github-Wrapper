@@ -1,0 +1,20 @@
+{
+  "name": "naor-nodejs-ha",
+  "version": "1.0.0",
+  "description": "GraphQL wrapper for GitHub REST API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Naor Nagar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.2.1",
+    "graphql-import": "^0.7.1",
+    "graphql-tools": "^4.0.4",
+    "node-fetch": "^2.3.0",
+    "schema": "^0.2.1"
+  }
+}
