@@ -100,9 +100,9 @@ type User{
     email:String
     hireable:String
 
-    repositories:[Repository!]
+    repositories:[Repository]
 }
 
 type Query{
-     user(username:String!): User!
+     user(username:String!): User
 }

@@ -16,7 +16,7 @@ const resolvers = {
       }
 
       const userInfo = await fetch(`${BASE_URL}/users/${args.username}`);
-      return userInfo.json();
+      return userInfo.ok ? userInfo.json() : null;
     }
 
   },
@@ -26,7 +26,7 @@ const resolvers = {
         throw new Error('missing repos_url in parent');
       }
       const reposInfo = await fetch(parent['repos_url']);
-      return reposInfo.json();
+      return reposInfo.ok ? reposInfo.json() : [];
     },
   }
 
